@@ -1,5 +1,12 @@
 function permutationSort(a) {
-    let count = 0;
-    
-    return count;
+    if (a.length<=1) {
+        return 1;
+    }
+    else{
+        let permArr = [];
+        for(let i = 0; c < a.length; i++){
+            
+        }
+        
+    }
 }
