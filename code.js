@@ -10,6 +10,7 @@ function ifsorted(array){
 function permutationSort(a, num=0) {
     if (num === a.length - 1) {
         return isSorted(a) ? 1 : 1; 
+    }
 
     let count = 0;
     for(let i = num; i < a.length; i++){
