@@ -9,18 +9,19 @@ function ifsorted(array){
 
 function permutationSort(a, num=0) {
     if (num === a.length - 1) {
-        return ifsorted(a) ? 1 : 1; 
+        return 1;
     }
 
     let count = 0;
     for(let i = num; i < a.length; i++){
         [a[i], a[num]] = [a[num], a[i]];
         count += permutationSort(a, num + 1);
-        [a[i], a[num]] = [a[num], a[i]];
         
         if (ifsorted(a)) {
             break;
         }
+
+        [a[i], a[num]] = [a[num], a[i]];
     }
     return count;
 }
