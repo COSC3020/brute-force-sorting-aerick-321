@@ -9,7 +9,7 @@ function ifsorted(array){
 
 function permutationSort(a, num=0) {
     if (num === a.length - 1) {
-        return isSorted(a) ? 1 : 1; 
+        return ifsorted(a) ? 1 : 1; 
     }
 
     let count = 0;
@@ -18,7 +18,7 @@ function permutationSort(a, num=0) {
         count += permutationSort(a, num + 1);
         [a[i], a[num]] = [a[num], a[i]];
         
-        if (isSorted(a)) {
+        if (ifsorted(a)) {
             break;
         }
     }
