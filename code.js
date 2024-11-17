@@ -7,14 +7,15 @@ function ifsorted(array){
     }
 }
 
-function permutationSort(a) {
+function permutationSort(a, num) {
     if (a.length<=1) {
         return 1;
     }
     else{
-        let permArr = [];
-        for(let i = 0; i < a.length; i++){
-            
+        for(let i = num; i < a.length; i++){
+             [a[i], a[num]] = [a[num], a[i]];
+            permutationSort(a, num +1);
+            [a[i], a[num]] = [a[num], a[i]];
         }
         
     }
