@@ -20,3 +20,8 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+The best case would be sorted on the first loop so O(n). The worst case would be O(n*n!) because it would go through every permutaion with a recursive swap so for an array length of n it would be n! and then checking if it was sorted is O(n). The expected complexity for randomly generated permutations would still be O(n⋅n!). This is because, on average, n!/2 permutations are needed to find the sorted array, and each permutation requires O(n) to check if it is sorted. Together, this results in O(n⋅n!). There could be repeats in permutations if generated randomly so checking if the array is sorted so the runtime could vary. The best case scenerio would also be O(n) which is sorted on the first try. However, there is no guarantee that the list will be sorted if permutations are generated randomly. The randomness introduces the possibility of infinite runtime, as the algorithm might never produce the sorted permutation.
+
+
+Used geeksforgeeks for ideas on how to permutate the array. https://www.geeksforgeeks.org/different-ways-to-generate-permutations-of-an-array/ “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
