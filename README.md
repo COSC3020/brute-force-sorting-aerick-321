@@ -21,7 +21,7 @@ randomly without memory instead of systematically trying them?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-The best case would be sorted on the first loop so O(n). The worst case would be O(n!) because it would go through every permutaion. The complexity still be O(n!) for randomly generated permutations but there could be repeats in permutations if generated randomly so the time could vary.
+The best case would be sorted on the first loop so O(n). The worst case would be O(n!) because it would go through every permutaion with a recursive swap so for an array length of n it would be n!. The complexity still be O(n!) for randomly generated permutations but there could be repeats in permutations if generated randomly so the time could vary.
 
 
 Used geeksforgeeks for ideas on how to permutate the array. https://www.geeksforgeeks.org/different-ways-to-generate-permutations-of-an-array/ “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
